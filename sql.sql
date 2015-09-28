@@ -10,10 +10,10 @@ city_name text,
 city_code text,
 province_id integer)
 
-create table t_Country(
+create table t_County(
 id integer primary key auto increment,
-country_name text,
-country_code text,
+county_name text,
+county_code text,
 city_id integer)
 
 
