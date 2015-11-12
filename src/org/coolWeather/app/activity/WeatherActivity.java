@@ -1,6 +1,7 @@
 package org.coolWeather.app.activity;
 
 import org.coolWeather.app.R;
+import org.coolWeather.app.service.AutoUpdateService;
 import org.coolWeather.app.util.HttpCallbackListener;
 import org.coolWeather.app.util.HttpUtil;
 import org.coolWeather.app.util.Utility;
@@ -160,7 +161,8 @@ public class WeatherActivity extends Activity implements OnClickListener {
     	weatherInfoLayout.setVisibility(View.VISIBLE);
     	cityNameText.setVisibility(View.VISIBLE);
     	
-    	
+    	Intent intent = new Intent(this,AutoUpdateService.class);
+    	startService(intent);
     } 
    
 
