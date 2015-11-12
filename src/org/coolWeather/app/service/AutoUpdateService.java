@@ -1,5 +1,6 @@
 package org.coolWeather.app.service;
 
+import org.coolWeather.app.receiver.AutoUpdateReceiver;
 import org.coolWeather.app.util.HttpCallbackListener;
 import org.coolWeather.app.util.HttpUtil;
 import org.coolWeather.app.util.Utility;
